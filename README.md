@@ -1,6 +1,7 @@
 # MG5
 ## Devlog
-Put your Devlog here.
+1. I think NavMesh is more suitable when a character needs to automatically move to a certain position and needs to avoid obstacles. For example, in games like League of Legends, after the player clicks on a position, the character needs to find its own route to pass through. NavMesh is very useful in this situation because it can help the character automatically find paths that can be taken and avoid areas that cannot be passed through. If a game is more dependent on jumping, falling, gravity, and collisions, I think using the physics system would be more appropriate. For example, platform jumping games, where the player needs to jump from one platform to another and the character is affected by gravity. In this case, using the physics system to control movement would be more reasonable than NavMesh, because the focus is not on automatic pathfinding, but on the effects of various physical phenomena on the character.
+2. This for loop will check each bird in the _birds array. It starts with the first bird and then loops continuously until all the birds in the array have been checked. Vector3.Distance is used to calculate the distance between each bird and the player. Then, the if statement will determine whether this distance is less than or equal to _interactDistance. If a bird is close enough to the player, its RunAway() method will be called, making the bird run away. Therefore, as long as a certain bird in the _birds array enters the set interaction distance, it will run away.
 
 ## Open-Source Assets
 - [Quirky animal 3D models](https://assetstore.unity.com/packages/3d/characters/animals/quirky-series-free-animals-pack-178235)
